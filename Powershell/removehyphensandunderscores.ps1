@@ -1,5 +1,5 @@
 # Set your directory path
-$directoryPath = 'C:\Users\hampt\OneDrive\Obsidian Vault\Spaces\Education\VVC\English 101'
+$directoryPath = 'LOCATION OF FILES'
 
 # Iterate over each file in the directory
 Get-ChildItem -Path $directoryPath -Recurse -File | ForEach-Object {
@@ -9,3 +9,4 @@ Get-ChildItem -Path $directoryPath -Recurse -File | ForEach-Object {
     # Rename the file
     Rename-Item -Path $_.FullName -NewName $newName
 }
+
